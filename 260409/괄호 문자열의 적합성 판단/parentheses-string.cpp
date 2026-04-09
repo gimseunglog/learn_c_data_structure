@@ -13,6 +13,10 @@ int main() {
         if(str[i] == '(')
             s.push(str[i]);
         else if(str[i] == ')'){
+            if(s.empty()){
+                cout << "No";
+                return 0;
+            }
             s.pop();
         }
     }
